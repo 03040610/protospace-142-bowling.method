@@ -15,6 +15,9 @@ class PrototypesController < ApplicationController
       render :new
     end
   end
+
+  def destory
+  end
   
   private 
   def prototype_params
