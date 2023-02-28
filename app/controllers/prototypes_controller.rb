@@ -17,6 +17,8 @@ class PrototypesController < ApplicationController
   end
 
   def destory
+    prototype = Prototype.find(params[:id])
+    prototype.destroy
   end
   
   private 
