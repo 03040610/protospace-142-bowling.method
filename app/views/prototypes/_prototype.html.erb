@@ -1,10 +1,10 @@
 <div class="card">
-  <%= image_tag prototype.image, class: 'card-image' if prototype.image.attached? %>
+  <%= image_tag prototype.image, class: 'card-img' if prototype.image.attached? %>
   <div class="card__body">
-  <%= prototype.title %>
+  <%= prototype.title, root_path, class: :card_title %>
     <p class="card__summary">
       <%= prototype.catch_copy %>
     </p>
-    <%= prototype.user.name %>
+    <%= prototype.user.name, root_path, class: :card_user %>
   </div>
 </div>
