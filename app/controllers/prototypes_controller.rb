@@ -18,6 +18,11 @@ class PrototypesController < ApplicationController
     end
   end
 
+
+  def show
+    @prototype = Prototype.find(params[:id])
+  end
+
   def destroy
     @prototype = Prototype.find(params[:id])
     @prototype.destroy
